@@ -1,0 +1,25 @@
+{
+  "name": "saluki2-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "NODE_DEBUG=request nodemon --inspect example/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eureka-js-client": "^4.3.0",
+    "fs-extra": "^4.0.0",
+    "globby": "^6.1.0",
+    "grpc": "^1.4.1",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.4",
+    "simple-git": "^1.73.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "koa": "^2.3.0"
+  }
+}
