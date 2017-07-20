@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "NODE_DEBUG=request nodemon --inspect example/main.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quancheng-ec/saluki2-node.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
