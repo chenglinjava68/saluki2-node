@@ -16,4 +16,4 @@ const client = new Saluki2Client(config)
 
 client.init()
 
-app.listen(3000)
+app.listen(config.port)

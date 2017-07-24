@@ -1,5 +1,5 @@
 {
-  "name": "saluki2-node",
+  "name": "@quancheng/saluki2-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,12 +14,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@quancheng/zeus-service": "^1.0.0",
     "eureka-js-client": "^4.3.0",
     "fs-extra": "^4.0.0",
     "globby": "^6.1.0",
     "grpc": "^1.4.1",
     "ip": "^1.1.5",
     "lodash": "^4.17.4",
+    "md5": "^2.2.1",
     "simple-git": "^1.73.0"
   },
   "devDependencies": {

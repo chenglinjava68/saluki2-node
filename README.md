@@ -6,7 +6,7 @@ node rpc client based on grpc and eureka
 npm install saluki2-node -S
 ```
 
-### Usage
+## Usage
 ```js
 const Saluki2Client = require('saluki2-node')
 // or if you use compiler
@@ -15,9 +15,10 @@ import Saluki2Client from 'saluki2-node'
 const client = new Saluki2Client({
   // ... config here
 })
+
 ```
 
-### Config
+## Config
 ```js
 // your config.js
 const pkg = require('./package.json') // import your package.json
