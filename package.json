@@ -1,6 +1,6 @@
 {
   "name": "@quancheng/saluki2-node",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "eureka-js-client": "^4.3.0",
     "fs-extra": "^4.0.0",
     "globby": "^6.1.0",
-    "grpc": "^1.4.1",
+    "grpc": "1.4.1",
     "ip": "^1.1.5",
     "lodash": "^4.17.4"
   },
