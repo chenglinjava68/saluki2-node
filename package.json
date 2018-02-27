@@ -1,11 +1,11 @@
 {
-  "name": "@quancheng/saluki2-node",
-  "version": "1.2.7",
+  "name": "qccost-saluki2-node",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "NODE_DEBUG=request nodemon --inspect example/main.js"
+    "example": "NODE_DEBUG=saluki2-node nodemon --inspect example/main.js"
   },
   "repository": {
     "type": "git",
@@ -15,15 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "debug": "^3.0.1",
-    "eureka-js-client": "^4.3.0",
+    "eureka-js-client": "^4.4.0",
     "fs-extra": "^4.0.0",
     "globby": "^6.1.0",
-    "grpc": "1.4.1",
+    "grpc": "^1.9.1",
     "ip": "^1.1.5",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "@quancheng/zeus-service": "^1.0.0",
     "nodemon": "^1.11.0",
     "koa": "^2.3.0"
   }

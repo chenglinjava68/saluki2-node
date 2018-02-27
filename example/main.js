@@ -9,8 +9,8 @@ app.use(async ctx => {
     return
   }
 
-  ctx.body = await client.services.UserService.get({ accountId: '999' })
-});
+  ctx.body = await client.services.UserService.get({ accountId: '103170405113016002' })
+})
 
 const client = new Saluki2Client(config)
 
