@@ -17,6 +17,8 @@ module.exports = {
           'com.quancheng.samoyed.sms.service.SmsService:samoyed-service:1.0.0',
         source: 'node_modules/@quancheng'
       },
+      ConfigService:
+        'com.quancheng.config.service.ConfigService:mercury-service-fk:1.0.0',
       BorrowService:
         'com.quancheng.ceres.service.BorrowService:persephone-service:1.0.0',
       AccountSearchService:
