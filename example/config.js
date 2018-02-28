@@ -16,7 +16,11 @@ module.exports = {
         package:
           'com.quancheng.samoyed.sms.service.SmsService:samoyed-service:1.0.0',
         source: 'node_modules/@quancheng'
-      }
+      },
+      BorrowService:
+        'com.quancheng.ceres.service.BorrowService:persephone-service:1.0.0',
+      AccountSearchService:
+        'com.quancheng.zeus.service.AccountSearchService:sparta-search:1.0.0'
     }
   }
 }

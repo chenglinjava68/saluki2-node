@@ -9,7 +9,20 @@ app.use(async ctx => {
     return
   }
 
-  ctx.body = await client.services.UserService.get({ accountId: '103170405113016002' })
+  ctx.body = {
+    user: await client.services.UserService.get({
+      accountId: '103170405113016002'
+    }),
+    sendSms: await client.services.SmsService.sendSms({
+      mobile: '18616348411'
+    }),
+    accountSearch: await client.services.AccountSearchService.accountSearch({
+      accountId: '103170405113016002'
+    }),
+    borrow: await client.services.BorrowService.getBorrowAccounts({
+      formId: '1111122323'
+    })
+  }
 })
 
 const client = new Saluki2Client(config)
