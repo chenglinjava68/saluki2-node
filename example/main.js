@@ -9,10 +9,12 @@ app.use(async ctx => {
     return
   }
 
+  const user = await client.services.UserService.get({
+    accountId: '103170405113016002'
+  })
+
   ctx.body = {
-    user: await client.services.UserService.get({
-      accountId: '103170405113016002'
-    }),
+    user: user._get('users[0].userId'),
     sendSms: await client.services.SmsService.sendSms({
       mobile: '18616348411'
     }),
