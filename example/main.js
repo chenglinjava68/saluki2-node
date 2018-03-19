@@ -9,18 +9,23 @@ app.use(async ctx => {
     return
   }
 
-  const user = await client.services.UserService.get({
-    accountId: '103170405113016002'
-  })
+  const user = await client.services.UserService.get(
+    {
+      accountId: '103170405113016002'
+    },
+    {
+      'qc-logid': '123'
+    }
+  )
 
   ctx.body = {
     user: user._get('users[0].userId'),
     sendSms: await client.services.SmsService.sendSms({
       mobile: '18616348411'
     }),
-    accountSearch: await client.services.AccountSearchService.accountSearch({
-      accountId: '103170405113016002'
-    }),
+    // accountSearch: await client.services.AccountSearchService.accountSearch({
+    //   accountId: '103170405113016002'
+    // }),
     borrow: await client.services.BorrowService.getBorrowAccounts({
       formId: '1111122323'
     })
