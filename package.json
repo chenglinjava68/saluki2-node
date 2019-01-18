@@ -1,0 +1,30 @@
+{
+  "name": "@quancheng/saluki2-node",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "NODE_DEBUG=request nodemon --inspect example/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quancheng-ec/saluki2-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^3.0.1",
+    "eureka-js-client": "^4.4.2",
+    "fs-extra": "^4.0.0",
+    "globby": "^6.1.0",
+    "grpc": "^1.18.0",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "@quancheng/zeus-service": "^1.0.0",
+    "koa": "^2.3.0",
+    "nodemon": "^1.11.0"
+  }
+}
